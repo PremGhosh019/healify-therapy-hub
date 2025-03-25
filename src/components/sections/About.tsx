@@ -59,20 +59,7 @@ const About = () => {
               <div className="absolute top-6 -right-6 w-2/3 h-3/4 bg-primary/10 rounded-2xl -z-10"></div>
               <div className="absolute -bottom-6 -left-6 w-2/3 h-3/4 bg-accent/10 rounded-2xl -z-10"></div>
               
-              {/* Stats card */}
-              <div className="absolute -bottom-8 right-8 glass-card p-5 rounded-xl shadow-lg animate-on-scroll fade-in w-64">
-                <div className="flex items-center gap-4">
-                  <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 text-primary">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground">5000+</h3>
-                    <p className="text-sm text-foreground/60">Satisfied Patients</p>
-                  </div>
-                </div>
-              </div>
+              {/* Stats card removed as requested */}
             </div>
           </div>
           
