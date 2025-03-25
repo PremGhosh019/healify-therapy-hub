@@ -48,8 +48,12 @@ const About = () => {
           <div className="order-2 lg:order-1">
             <div className="relative">
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl">
-                <div className="aspect-[4/3]">
-                  <div className="bg-[url('https://images.unsplash.com/photo-1631217862850-5126be0f9951?q=80&w=2071')] bg-cover bg-center h-full w-full animate-on-scroll scale-in"></div>
+                <div className="aspect-[4/5]">
+                  <img
+                    src="/lovable-uploads/f7037382-b01b-4db7-a032-301750784da6.png"
+                    alt="Doctor with stethoscope"
+                    className="h-full w-full object-cover animate-on-scroll scale-in"
+                  />
                 </div>
               </div>
               <div className="absolute top-6 -right-6 w-2/3 h-3/4 bg-primary/10 rounded-2xl -z-10"></div>
@@ -80,7 +84,7 @@ const About = () => {
               Dedicated to Improving Your Mobility & Quality of Life
             </h2>
             <p className="text-foreground/80 mb-6 leading-relaxed animate-on-scroll slide-up">
-              HealClinic was founded with a mission to provide specialized care for patients
+              Parent Bless was founded with a mission to provide specialized care for patients
               with neurological and physical conditions. Our team of experienced healthcare 
               professionals is committed to delivering personalized treatment plans that address
               the unique needs of each patient.
