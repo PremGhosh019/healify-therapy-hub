@@ -1,10 +1,9 @@
-
 import React, { useEffect, useRef } from 'react';
 import ServiceCard from '@/components/ui/ServiceCard';
 import { 
   Brain, 
   ActivitySquare, 
-  Spine, 
+  Spline, 
   HandMetal, 
   Zap
 } from 'lucide-react';
@@ -23,7 +22,7 @@ const services = [
   {
     title: 'Cervical Pain Treatment',
     description: 'Advanced treatments that target the root causes of cervical pain to provide lasting relief and improved neck mobility.',
-    icon: <Spine className="w-6 h-6 text-primary" />
+    icon: <Spline className="w-6 h-6 text-primary" />
   },
   {
     title: 'Frozen Shoulder Recovery',
