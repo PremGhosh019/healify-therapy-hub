@@ -10,8 +10,8 @@ const Footer = () => {
           {/* Column 1: About */}
           <div className="space-y-4">
             <h3 className="text-xl font-playfair font-medium text-white mb-4">
-              <span className="text-primary">Heal</span>
-              <span>Clinic</span>
+              <span className="text-primary">Parent</span>
+              <span>Bless</span>
             </h3>
             <p className="text-white/70 text-sm leading-relaxed">
               We are dedicated to providing exceptional care and personalized treatment for a variety of neurological and 
@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-6 border-t border-white/20 text-center text-white/50 text-sm">
-          <p>&copy; {new Date().getFullYear()} HealClinic. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Parent Bless. All rights reserved.</p>
         </div>
       </div>
     </footer>

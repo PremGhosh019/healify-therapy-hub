@@ -32,8 +32,8 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <h1 className="text-2xl font-playfair font-medium tracking-tight">
-            <span className="text-primary">Heal</span>
-            <span className="text-foreground">Clinic</span>
+            <span className="text-primary">Parent</span>
+            <span className="text-foreground">Bless</span>
           </h1>
         </Link>
 
