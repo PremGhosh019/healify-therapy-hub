@@ -115,22 +115,7 @@ const Hero = () => {
             <div className="bg-[url('https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=2070')] bg-cover bg-center h-full w-full"></div>
           </div>
           
-          {/* Stats card */}
-          <div className="absolute -bottom-6 -left-6 glass-card p-4 rounded-xl shadow-lg animate-on-scroll scale-in w-60">
-            <div className="flex items-center gap-4">
-              <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 text-primary">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-foreground">15+</h3>
-                <p className="text-sm text-foreground/60">Years of Experience</p>
-              </div>
-            </div>
-          </div>
-          
-          {/* Specialized care card */}
+          {/* Specialized care card - kept this card but removed the 15+ years card */}
           <div className="absolute -top-6 -right-6 glass-card p-4 rounded-xl shadow-lg animate-on-scroll scale-in w-64">
             <div className="flex items-center gap-4">
               <div className="bg-accent/10 w-12 h-12 rounded-full flex items-center justify-center">
