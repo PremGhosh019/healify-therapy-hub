@@ -16,12 +16,368 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Import styles -->
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="/lovable-uploads/d702bbe0-845c-4282-975e-8e37c9405ed4.png" alt="Parent Bless Clinic Logo" class="logo-img">
+          <h1 class="logo-text">
+            <span class="text-primary">Parent</span><span>Bless</span>
+          </h1>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="desktop-nav">
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="#" class="btn btn-primary">Book Appointment</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+          <span class="menu-icon"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobile-menu">
+        <div class="container">
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="#" class="btn btn-primary mobile-cta">Book Appointment</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-badge">Premier Healthcare</span>
+          <h1 class="hero-title">Physical Therapy & Advance Pain Management Hub</h1>
+          <p class="hero-description">Specialized care for neurological and physical conditions, providing personalized treatment plans to improve your quality of life.</p>
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Book Appointment</a>
+            <a href="#services" class="btn btn-outline">Our Services</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="/lovable-uploads/f7037382-b01b-4db7-a032-301750784da6.png" alt="Rehabilitation Therapy" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Our Specialized Services</span>
+          <h2 class="section-title">Comprehensive Care for Neurological and Physical Conditions</h2>
+          <p class="section-description">We provide specialized treatment for a range of conditions, focusing on personalized care plans that address your specific needs and goals for recovery.</p>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="2" /><path d="M17 12h-2l-2 5-2-10-2 5H7" /></svg>
+            </div>
+            <h3 class="service-title">Paralysis Rehabilitation</h3>
+            <p class="service-description">Comprehensive rehabilitation programs designed to improve mobility, strength, and quality of life for patients with paralysis.</p>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c.74 0 1.47.13 2.16.38a6.58 6.58 0 0 1 4.46 4.46c.25.69.38 1.42.38 2.16 0 .74-.13 1.47-.38 2.16-.4 1.13-1.1 2.13-2 2.88.09.47.14.98.14 1.5 0 1.47-.47 2.44-1.19 3.13S13.94 21 12 21s-2.39-.33-3.56-1.02C7.35 19.27 6.89 18.3 6.89 16.84c0-.5.04-1 .13-1.45-.91-.75-1.62-1.76-2.02-2.89A6.64 6.64 0 0 1 4.62 10c0-.74.13-1.47.38-2.16a6.58 6.58 0 0 1 4.46-4.46A6.61 6.61 0 0 1 12 3zm0 16c.99 0 1.87-.06 2.61-.47.71-.39 1.05-1.04 1.05-1.7 0-1.65-1.41-3-3.13-3.44 0 .15.03.3.04.44.32.01.64.14.88.51.17.26.65.33.88.07 1.88-2.2 1.85-5.53-.04-7.7a5.1 5.1 0 0 0-7.22 0c-1.89 2.17-1.92 5.5-.04 7.7.27.3.8.12.88-.15.14-.45.54-.6.88-.51.02-.15.04-.3.04-.44-1.73.44-3.14 1.8-3.14 3.44 0 .66.34 1.31 1.05 1.7.74.41 1.62.47 2.61.47z"></path></svg>
+            </div>
+            <h3 class="service-title">Cerebral Palsy Therapy</h3>
+            <p class="service-description">Specialized therapy techniques that focus on improving motor skills, coordination, and overall function for cerebral palsy patients.</p>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l6 6 4-4 8 8"></path><circle cx="7" cy="4" r="1"></circle><circle cx="13" cy="4" r="1"></circle><circle cx="19" cy="4" r="1"></circle><circle cx="19" cy="10" r="1"></circle><circle cx="19" cy="16" r="1"></circle><circle cx="13" cy="10" r="1"></circle><circle cx="7" cy="10" r="1"></circle><circle cx="7" cy="16" r="1"></circle><circle cx="13" cy="16" r="1"></circle><circle cx="19" cy="22" r="1"></circle><circle cx="13" cy="22" r="1"></circle><circle cx="7" cy="22" r="1"></circle></svg>
+            </div>
+            <h3 class="service-title">Cervical Pain Treatment</h3>
+            <p class="service-description">Advanced treatments that target the root causes of cervical pain to provide lasting relief and improved neck mobility.</p>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9a6 6 0 1 0-4 10"></path><path d="M10 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"></path><path d="M11 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"></path><path d="M17 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"></path><path d="M9 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"></path><path d="M13 14m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"></path><path d="M16 15m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"></path></svg>
+            </div>
+            <h3 class="service-title">Frozen Shoulder Recovery</h3>
+            <p class="service-description">Effective therapeutic approaches to restore range of motion and alleviate pain associated with frozen shoulder conditions.</p>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <h3 class="service-title">Sciatica Pain Management</h3>
+            <p class="service-description">Targeted interventions to reduce sciatic nerve inflammation and provide relief from radiating pain down the lower back and legs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <span class="section-badge">About Us</span>
+            <h2 class="section-title">Dedicated to Your Recovery Journey</h2>
+            <p class="about-description">At Parent Bless Clinic, we combine advanced therapeutic techniques with compassionate care to help you achieve optimal recovery. Our team of experienced specialists is committed to providing personalized treatment plans tailored to your unique needs.</p>
+            <div class="about-features">
+              <div class="feature">
+                <div class="feature-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div class="feature-text">
+                  <h4>Experienced Specialists</h4>
+                  <p>Our team consists of highly qualified professionals with extensive experience in various rehabilitation fields.</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div class="feature-text">
+                  <h4>Personalized Care Plans</h4>
+                  <p>We develop individualized treatment strategies that address your specific condition and recovery goals.</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div class="feature-text">
+                  <h4>Modern Facilities</h4>
+                  <p>Our clinic is equipped with state-of-the-art technology to provide the most effective treatments available.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="/lovable-uploads/f7037382-b01b-4db7-a032-301750784da6.png" alt="Our rehabilitation center" class="about-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">Schedule Your Consultation Today</h2>
+          <p class="section-description">Take the first step towards recovery by scheduling a consultation with our specialists. We're here to answer your questions and guide you through the process.</p>
+        </div>
+        
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <h3>Contact Us</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+          
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <h4>Phone</h4>
+              <p>(123) 456-7890</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <h4>Email</h4>
+              <p>info@parentbless.com</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <h4>Location</h4>
+              <p>123 Healing Street, Recovery City, RC 12345</p>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <h4>Hours</h4>
+              <p>Monday-Friday: 8am-6pm<br>Saturday: 9am-2pm<br>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="/lovable-uploads/d702bbe0-845c-4282-975e-8e37c9405ed4.png" alt="Parent Bless Clinic Logo" class="footer-logo-img">
+            <h2 class="footer-logo-text">
+              <span class="text-primary">Parent</span><span>Bless</span>
+            </h2>
+          </div>
+          <div class="footer-links">
+            <div class="footer-links-column">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Book Appointment</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-column">
+              <h3>Our Services</h3>
+              <ul>
+                <li><a href="#services">Paralysis Rehabilitation</a></li>
+                <li><a href="#services">Cerebral Palsy Therapy</a></li>
+                <li><a href="#services">Cervical Pain Treatment</a></li>
+                <li><a href="#services">Frozen Shoulder Recovery</a></li>
+              </ul>
+            </div>
+            <div class="footer-links-column">
+              <h3>Contact Us</h3>
+              <ul>
+                <li>123 Healing Street, Recovery City, RC 12345</li>
+                <li>info@parentbless.com</li>
+                <li>(123) 456-7890</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Parent Bless Clinic. All rights reserved.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      let isMenuOpen = false;
+      
+      mobileMenuBtn.addEventListener('click', function() {
+        isMenuOpen = !isMenuOpen;
+        mobileMenu.classList.toggle('active', isMenuOpen);
+        mobileMenuBtn.classList.toggle('active', isMenuOpen);
+      });
+      
+      // Navbar scroll effect
+      window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 10) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          
+          if (isMenuOpen) {
+            mobileMenu.classList.remove('active');
+            mobileMenuBtn.classList.remove('active');
+            isMenuOpen = false;
+          }
+          
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+      
+      // Form submission
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Thank you for your message! We will get back to you soon.');
+          contactForm.reset();
+        });
+      }
+      
+      // Animation on scroll
+      function animateOnScroll() {
+        const elements = document.querySelectorAll('.animate-on-scroll');
+        
+        elements.forEach(element => {
+          const elementPosition = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+          
+          if (elementPosition < windowHeight - 100) {
+            element.classList.add('appear');
+          }
+        });
+      }
+      
+      // Add animation classes to elements
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.querySelectorAll('.section-header, .service-card, .feature, .about-image, .about-text, .contact-form, .info-card').forEach(el => {
+          el.classList.add('animate-on-scroll');
+        });
+      });
+      
+      // Run animation on load and scroll
+      window.addEventListener('load', animateOnScroll);
+      window.addEventListener('scroll', animateOnScroll);
+    </script>
   </body>
 </html>
