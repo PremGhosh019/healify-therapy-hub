@@ -30,7 +30,12 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex items-center gap-3">
+          <img 
+            src="/lovable-uploads/d702bbe0-845c-4282-975e-8e37c9405ed4.png" 
+            alt="Parent Bless Clinic Logo" 
+            className="h-12" 
+          />
           <h1 className="text-2xl font-playfair font-medium tracking-tight">
             <span className="text-primary">Parent</span>
             <span className="text-foreground">Bless</span>
