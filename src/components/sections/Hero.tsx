@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronRight } from 'lucide-react';
@@ -50,9 +49,8 @@ const Hero = () => {
               Specialized Rehabilitation Clinic
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-semibold leading-tight">
-              Advanced Care for <br />
-              <span className="text-primary">Neurological &</span> <br />
-              <span className="text-primary">Physical</span> Conditions
+              <span className="text-primary">Physical Therapy &</span> <br />
+              <span className="text-primary">Advance</span> Pain <br /> Management Hub
             </h1>
           </div>
           
@@ -115,7 +113,6 @@ const Hero = () => {
             <div className="bg-[url('https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=2070')] bg-cover bg-center h-full w-full"></div>
           </div>
           
-          {/* Specialized care card - kept this card but removed the 15+ years card */}
           <div className="absolute -top-6 -right-6 glass-card p-4 rounded-xl shadow-lg animate-on-scroll scale-in w-64">
             <div className="flex items-center gap-4">
               <div className="bg-accent/10 w-12 h-12 rounded-full flex items-center justify-center">
